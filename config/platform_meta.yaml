@@ -1,0 +1,16 @@
+model_configuration:
+  base_model: "unsloth/llama-3-8b-Instruct-bnb-4bit"
+  adapter_output_dir: "./src/tuning/outputs"
+  quantization_format: "AWQ"
+  vllm_host: "0.0.0.0"
+  vllm_port: 8000
+
+safety_configuration:
+  guard_model_id: "meta-llama/Llama-Guard-3-8B"
+  max_agent_iterations: 3
+  confidence_threshold: 0.85
+
+retrieval_configuration:
+  vector_dimension: 128
+  top_k_sparse: 2
+  top_k_dense: 2
