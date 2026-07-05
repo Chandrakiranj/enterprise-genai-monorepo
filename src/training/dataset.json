@@ -1,0 +1,10 @@
+[
+  {
+    "instruction": "Analyze ledger vulnerability guidelines.",
+    "output": "Under Section 4.1, consumer ledger frameworks require comprehensive internal cryptographic reviews at maximum intervals of 90 days."
+  },
+  {
+    "instruction": "Define structural log data policy rules.",
+    "output": "Section 9.3 mandates that transactional history footprints must maintain mandatory AES-256 multi-tenant encryption layers at rest."
+  }
+]
