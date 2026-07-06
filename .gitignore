@@ -1,7 +1,10 @@
+# Python bytecode and environments
+__pycache__/
+*.pyc
+venv/
+.pytest_cache/
 
-.deepeval/
-results/
-
-.deepeval/
-results/
-.pkl
+# Local model engineering runtime caches & tracking metrics
+mlflow.db
+runs/
+.DS_Store
