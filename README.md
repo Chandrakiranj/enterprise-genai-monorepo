@@ -1,30 +1,26 @@
-PLATFORM ANCHOR: APPLE SILICON / MPS
-                                
-  +---------------------------------------------------------------------------------------+
-  |                        PROJECT 1: TRAINING & OPTIMIZATION PIPELINE                     |
-  |  - Dataset Engine: src/training/dataset.json (Domain Compliance Ingestion)           |
-  |  - PEFT Scaling: QLoRA Optimization Loop -> 1,081,344 Trainable Parameters Flagged    |
-  |  - Convergence Telemetry: True Cross-Entropy Loss Reduced Systematically to 5.353     |
-  +-------------------------------------------+-------------------------------------------+
-                                              |
-                                              | Exports Validated
-                                              | Adapter Weights
-                                              v
-  +-------------------------------------------+-------------------------------------------+
-  |                        PROJECT 3: LOCAL PRODUCTION APPLICATION ENGINE                 |
-  +---------------------------------------------------------------------------------------+
-  |  - User Interaction Layer: src/evaluation/dashboard.py (Premium Cyber Dashboard)     |
-  |  - Orchestration Node: LangGraph Deterministic State Machine (Cyclic Routing Node)    |
-  |  - Spatial Search Index: FAISS Vector Core (Local Cosine Similarity Store)            |
-  +-------------------------------------------+-------------------------------------------+
-                                              |
-                                              | Inference Responses
-                                              | Dispatched for Audit
-                                              v
-  +-------------------------------------------+-------------------------------------------+
-  |                        PROJECT 2: CI/CD EVALUATION & DIAGNOSTICS                      |
-  +---------------------------------------------------------------------------------------+
-  |  - Automation Harness: src/evaluation/test_gateway.py (Native DeepEval Execution)     |
-  |  - Verification Matrix A: Faithfulness Metric Check (100% Real-World Grounding Pass)   |
-  |  - Verification Matrix B: Answer Relevancy Metric Check (100% Structural Intent Pass)  |
-  +---------------------------------------------------------------------------------------+
+# ⚡ Enterprise GenAI Production Monorepo
+
+[![Python](https://img.shields.io/badge/Python-3.13-blue?logo=python&logoColor=white)](https://www.python.org/)
+[![Hardware Acceleration](https://img.shields.io/badge/Hardware-Apple%20Silicon%20MPS-success?logo=apple&logoColor=white)](#-project-1-hardware-accelerated-model-engineering-simulation)
+[![LLMOps Gating](https://img.shields.io/badge/LLMOps-DeepEval%20%7C%20CI%2FCD-orange?logo=pytest&logoColor=white)](#-project-2-multi-stage-hybrid-rag--llm-as-a-judge-gate)
+[![Agentic Framework](https://img.shields.io/badge/Agent-Stateful%20ReAct%20Loop-purple?logo=ai&logoColor=white)](#-project-3-stateful-autonomous-react-orchestrator)
+
+A highly optimized, production-engineered monorepo showcasing local Large Language Model (LLM) fine-tuning topologies, multi-stage hybrid retrieval architectures, local automated evaluation suites, and stateful autonomous agentic systems.
+
+---
+
+## 🏗️ System Architecture Topology
+
+```text
+==================================================================================================
+                                CENTRAL RUNTIME REPOSITORY ENVIRONMENT
+==================================================================================================
+                                               │
+        ┌──────────────────────────────────────┼──────────────────────────────────────┐
+        ▼                                      ▼                                      ▼
+ 🏋️  PROJECT 1: MODEL ENG              🔍  PROJECT 2: LLMOPS RAG              🤖  PROJECT 3: AGENTS
+ ┌───────────────────────────┐         ┌───────────────────────────┐         ┌───────────────────────────┐
+ │ • PEFT / QLoRA Framework  │         │ • BM25 + FAISS Indexing   │         │ • Stateful ReAct Loop     │
+ │ • Target Attention Layers │   ───>  │ • FlashRank Cross-Encoder │   ───>  │ • Tool Call Reflection    │
+ │ • Native Apple MPS (FP16) │         │ • Local Qwen 3B Judge     │         │ • Policy Guardrails       │
+ └───────────────────────────┘         └───────────────────────────┘         └───────────────────────────┘
